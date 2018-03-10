@@ -1,6 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 /* clearfix */
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
+
+body {
+  font-family: 'Helvetica';
+}
+
+#page {
+  color: #fff;
+}
+
+.container {
+  background-color: #418CFF;
+}
+
+.container > nav ul {
+  float: right;
+  margin: 10px 50px 0 0;
+}
+
+.container > nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  width: 60px;
+}
+
+.container > nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#content {
+  width: 50%;
+  margin: 20px auto 0;
+  text-align: center;
+}
+
+#content #searchField {
+  margin-top: 50px;
+}
+
+#content #searchField nav ul {
+  list-style-type: none;
+  background-color: #4084ef;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+#content #searchField nav ul li {
+  /* display: inline-block; */
+  min-width: 16.66666%;
+  /* text-align: center; */
+  float: left;
+  padding: 10px;
+}
+
+#content #searchField nav ul li.selected {
+  background-color: #234777;
+  border-top-left-radius: 5px;
+
+}
+
+#content #searchBox button {
+  min-width: 10%;
+  float: left;
+  /* margin: 0; */
+  background-color: #fff;
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+  /* box-sizing: border-box; */
+  border-bottom-left-radius: 5px;
+
+}
+
+#content #searchBox input[type='text'] {
+  float: left;
+  /* margin-left: 10%; */
+  background-color: #fff;
+  border: none;
+  padding: 20px;
+  width: 90%;
+  border-bottom-right-radius: 5px;
+  outline: none;
+}
+
+#content #searchTools {
+  margin: 50px 0 80px 0;
+  width: 100%;
+}
+
+#content #searchTools label {
+  /* display: inline-block; */
+  margin: 50px;
+  border-bottom: 3px solid #64a5ff;
+  border-bottom-right-radius: 1px;
+  border-bottom-left-radius: 1px;
+  padding: 10px;
+}
+
+#content #searchTools input[type='checkbox'] {
+  display: none;
+  /* width: 33.33333%; */
+}
+
+#content #searchTools input[type='checkbox']:checked + label {
+border-bottom-color: #fff;
+
+  /* width: 33.33333%; */
+}
+
+.container::after {
+  content: "+";
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  color: #418cff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 48px;
+  margin: 0 auto;
+  font-size: 2em;
+  top: 25px;
+  position: relative;
+  box-shadow: 1px 3px 5px #ccc;
+}
+/* .shape {
+  width: 0;
+  height: 0;
+  border-top: 100px solid red;
+   border-right: 100px solid yellow;
+   border-bottom: 100px solid green;
+  border-left: 100px solid blue;
+  border-radius: 50%;
+  border-top-
+  /* border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%; */
+} */

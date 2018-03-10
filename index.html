@@ -1,14 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Google</title>
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-  
+
+  <main id="page">
+    <div class="container clearfix">
+      <nav class="clearfix">
+        <ul>
+          <!-- TODO: add 'view more' icon -->
+          <li><a href="#">English</a></li>
+          <li><a href="#">Sign in</a></li>
+          <li><a href="#">--</a></li>
+        </ul>
+      </nav>
+      <div id="content">
+        <h1 id="google">Google</h1>
+        <div id="searchField">
+          <nav id="searchTabs">
+            <ul class="clearfix">
+              <li class="selected">Web</li>
+              <li>Images</li>
+              <li>Shopping</li>
+              <li>Videos</li>
+              <li>News</li>
+              <li>More</li>
+            </ul>
+          </nav>
+          <form class="clearfix" action="POST">
+            <div id="searchBox" class="clearfix">
+              <button type="submit" value="search" name="button">GO</button>
+              <input type="text">
+            </div>
+            <div id="searchTools">
+              <input type="checkbox" id="country" value="country" name="tools" checked>
+              <label for="country">Country: UK</label>
+              <input type="checkbox" id="history" value="history" name="tools" checked>
+              <label for="history">Past week</label>
+              <input type="checkbox" id="result" value="result" name="tools">
+              <label for="result">All results</label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- TODO: the footer tag, make the logo shape -->
+    <footer>
+      <div class="shape"></div>
+    </footer>
+  </main>
+
 </body>
+
 </html>
