@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Google</title>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -13,13 +14,12 @@
 <body>
 
   <main id="page">
-    <div class="container clearfix">
+    <header class="container clearfix">
       <nav class="clearfix">
         <ul>
-          <!-- TODO: add 'view more' icon -->
           <li><a href="#">English</a></li>
           <li><a href="#">Sign in</a></li>
-          <li><a href="#">--</a></li>
+          <li><a href="#"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
       <div id="content">
@@ -37,7 +37,7 @@
           </nav>
           <form class="clearfix" action="POST">
             <div id="searchBox" class="clearfix">
-              <button type="submit" value="search" name="button">GO</button>
+              <button type="submit" value="search" name="button"><i class="fas fa-search"></i></button>
               <input type="text">
             </div>
             <div id="searchTools">
@@ -51,7 +51,7 @@
           </form>
         </div>
       </div>
-    </div>
+    </header>
     <!-- TODO: the footer tag, make the logo shape -->
     <footer>
       <div class="shape"></div>

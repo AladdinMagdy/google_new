@@ -41,8 +41,13 @@ body {
 
 #content {
   width: 50%;
-  margin: 20px auto 0;
+  margin: 55px auto 0;
   text-align: center;
+}
+
+#content h1 {
+  font-size: 2.5em;
+  font-weight: 400;
 }
 
 #content #searchField {
@@ -96,7 +101,7 @@ body {
 }
 
 #content #searchTools {
-  margin: 50px 0 80px 0;
+  margin: 50px auto;
   width: 100%;
 }
 
